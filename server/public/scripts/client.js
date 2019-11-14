@@ -30,7 +30,7 @@ function testPost(){
     } // end objectToSend
     // AJAX POST to our server
     $.ajax({
-        type: 'post',
+        type: 'POST',
         url: '/test',
         data: objectToSend
     }).then( function(response){

@@ -2,7 +2,7 @@
 const express = require( 'express');
 const app = express();
 // NEEDED FOR A POST (req.body)
-const bodyParser = require( 'body-parser');
+const bodyParser = require( 'body-parser' );
 // uses
 app.use( express.static( 'server/public'));
 //Also needed for POST
@@ -22,6 +22,6 @@ app.get( '/test', (req, res)=>{
 
 // routes
 app.post('/test', (req, res)=>{
-    console.log('/test POST');
+    console.log('/test POST:', req.body );
     res.send( 200 );
 }) // end test POST
